@@ -97,7 +97,7 @@ function validateEntity(props) {
 		return
 	}
 
-	throw `Invalid property values: ${nonValidProps.join(', ')}`
+	throw new Error(`Invalid property values: ${nonValidProps.join(', ')}`)
 }
 
 function getControlInfo(binaryString) {
@@ -209,5 +209,5 @@ function printError(errorMessage, element) {
 	warning.innerText = errorMessage.toString()
 	warning.classList.add('barcode-error')
 
-	element.appendChild(warning);
+	element.appendChild(warning)
 }
