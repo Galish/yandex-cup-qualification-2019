@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Автоматизируй это</title>
+		<script src="./script.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="container"></div>
+		<script type="text/javascript">
+			solution(
+				`
+					<table>
+						<colgroup>
+							<col align="right" />
+							<col />
+							<col align="center" />
+						</colgroup>
+						<thead>
+							<tr>
+								<td>Command</td>
+								<td>Description</td>
+								<th>Is implemented</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>git status</th>
+								<td>List all new or modified files</td>
+								<th>Yes</th>
+							</tr>
+							<tr>
+								<th>git diff</th>
+								<td>  Show file differences
+that haven't been staged</td>
+								<td>No</td>
+							</tr>
+						</tbody>
+					</table>
+				`,
+				document.getElementById('container')
+			)
+		</script>
+	</body>
+</html>
